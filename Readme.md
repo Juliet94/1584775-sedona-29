@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Агеева](https://up.htmlacademy.ru/htmlcss/29/user/1584775).
-* Наставник: Кирилл Генералов (https://htmlacademy.ru/profile/hifull).
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull).
 
 ---
 
