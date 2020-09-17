@@ -1,0 +1,319 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-black-light: #333333;
+  --basic-grey: #EEEEEE;
+  --aside-grey: #888888;
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+
+  --rate: #666666;
+  --rate-background: #F2F2F2;
+
+  --basic-footer: rgba(255, 255, 255, 0.9);
+  --basic-border: #E5E5E5;
+
+  --brown-button-hover: #604E43;
+  --brown-button-active: #503E33;
+  --blue-button-hover: #669EC0;
+  --blue-button-active: #5496BD;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-black)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--basic-white);
+}
+
+/* Navigation */
+
+.header-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
+.site-nav {
+  list-style: none;
+}
+
+.site-nav-current {
+  color: var(--basic-brown)
+}
+
+.site-nav a:hover {
+  color: var(--basic-blue)
+}
+
+.site-nav a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/*Short-info*/
+
+.short-info{
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Features */
+
+.features h2+p {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black-light);
+  text-align: center;
+}
+
+.features-1 {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-align: center;
+}
+
+.features h3,
+.features h4 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-1 img {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-list-city {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  list-style: none;
+}
+
+.features-1-item {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black-light)
+}
+
+.features-2 {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-align: center;
+}
+
+.features-2 img {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.features-2 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-3,
+.features-4,
+.features-5 {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-black-light);
+  background-color: var(--basic-grey)
+}
+
+/* Modal*/
+.modal {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.interested {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.set-date {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black-light);
+  text-align: center;
+}
+
+/* Button */
+
+.button-brown {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.button-blue {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button-brown:hover {
+  background-color: var(--brown-button-hover)
+}
+
+.button-brown:active {
+  background-color: var(--brown-button-active)
+}
+
+.button-blue:hover {
+  background-color: var(--blue-button-hover)
+}
+
+.button-blue:active {
+  background-color: var(--blue-button-active)
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--basic-footer)
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue)
+}
+
+.social-button:hover {
+  background-color: var(--blue-button-hover)
+}
+
+.social-button:active {
+  background-color: var(--blue-button-active)
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
+/* Selection Hotels */
+
+.selection-hotels strong {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
+.selection-hotels span {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black)
+}
+
+/* Catalog Hotels */
+
+.hotels-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black)
+}
+
+.list-hotels {
+  list-style: none;
+}
+
+.hotels-item {
+  font-size: 14px;
+  line-height: 21px;
+  border-top: 1px solid var(--basic-border);
+}
+
+.hotels-item:last-child {
+  border-top: 1px solid var(--basic-border);
+  border-bottom: 1px solid var(--basic-border)
+}
+
+.hotels-item a h3:hover{
+  color: var(--basic-blue);
+}
+
+.hotels-item a h3:active{
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.catalog-hotels-type {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black-light);
+}
+
+.catalog-hotels-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black-light);
+}
+
+.catalog-hotels-rate {
+  color: var(--rate);
+  background-color: var(--rate-background)
+}
+
+
