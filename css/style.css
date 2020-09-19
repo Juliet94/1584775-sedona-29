@@ -1,7 +1,7 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -75,6 +75,8 @@ img {
 
 .reset-list-styles {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation */
@@ -83,7 +85,7 @@ img {
   font-size: 14px;
   line-height: 1.8;
   color: var(--basic-black);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-nav-current {
@@ -106,7 +108,7 @@ img {
   font-size: 21px;
   line-height: 1.2;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Features */
@@ -160,7 +162,7 @@ img {
   font-size: 30px;
   line-height: 0.8;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .set-date {
@@ -175,7 +177,7 @@ img {
 .button {
   font-size: inherit;
   line-height: inherit;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -212,13 +214,13 @@ img {
   background-color: var(--basic-footer)
 }
 
-.page-footer-contacts {
+.footer-contacts {
   font-size: 21px;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.page-footer-socials {
+.footer-socials {
   text-align: center;
 }
 
@@ -235,7 +237,7 @@ img {
   background-color: var(--blue-button-active)
 }
 
-.page-footer-copyright {
+.footer-copyright {
   font-size: 14px;
   line-height: 1.8;
   color: var(--basic-black);
