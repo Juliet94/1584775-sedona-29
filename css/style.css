@@ -46,7 +46,7 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1280px;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
@@ -78,14 +78,42 @@ img {
   margin: 0;
   padding: 0;
 }
+/* Grid */
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 /* Navigation */
 
+.header {
+  margin-bottom: 509px;
+}
+
 .header-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 1200px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 1.8;
   color: var(--basic-black);
   font-weight: 700;
+}
+
+.header-logo {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  z-index: 1;
+  justify-self: center;
+}
+
+.site-nav {
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 .site-nav-current {
@@ -102,6 +130,16 @@ img {
   opacity: 0.3;
 }
 
+/* Main */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Short-info */
 
 .short-info{
@@ -113,6 +151,37 @@ img {
 
 /* Features */
 
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "r1 r1 r1"
+    "r1 r1 r1"
+    "r2 r2 r2"
+    "r3 r4 r5";
+}
+
+.reason-1 {
+  grid-area: r1;
+}
+
+.reason-2 {
+  grid-area: r2;
+}
+
+.reason-3 {
+  grid-area: r3;
+}
+
+.reason-4 {
+  grid-area: r4;
+}
+
+.reason-5 {
+  grid-area: r5;
+}
+
 .features h2 + p {
   font-size: 14px;
   line-height: 1.8;
@@ -121,6 +190,7 @@ img {
 }
 
 .features-item {
+  min-height: 256px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
   text-align: center;
@@ -140,13 +210,17 @@ img {
 }
 
 .features-item-city {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 256px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
 .features-item.other {
   color: var(--basic-black-light);
-  background-color: var(--basic-grey)
+  background-color: var(--basic-grey);
 }
 
 /* Modal */
@@ -211,6 +285,10 @@ img {
 /* Footer */
 
 .page-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 474px auto 0 auto;
+  width: 1200px;
   background-color: var(--basic-footer)
 }
 
