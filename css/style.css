@@ -46,7 +46,7 @@
 /* Global */
 
 body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
@@ -78,6 +78,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 /* Grid */
 
 .page-body {
@@ -94,8 +95,8 @@ img {
 }
 
 .header-nav {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
   font-size: 14px;
@@ -105,15 +106,36 @@ img {
 }
 
 .header-logo {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  z-index: 1;
-  justify-self: center;
+  order: 3;
+  width: 138px;
+  height: 70px;
 }
 
 .site-nav {
-  grid-row-start: 1;
-  grid-column-start: 1;
+  display: contents;
+}
+
+.site-nav li {
+  white-space: nowrap;
+  padding: 15px 0;
+}
+
+.site-nav li:first-child {
+  order: 1;
+  margin-left: 72px;
+}
+
+.site-nav li:nth-child(2) {
+  order: 2;
+}
+
+.site-nav li:nth-child(3) {
+  order: 4;
+}
+
+.site-nav li:last-child {
+  order: 5;
+  margin-right: 72px;
 }
 
 .site-nav-current {
@@ -142,7 +164,7 @@ img {
 
 /* Short-info */
 
-.short-info{
+.short-info {
   font-size: 21px;
   line-height: 1.2;
   text-align: center;
@@ -154,7 +176,7 @@ img {
 .features-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content min-content;
   grid-template-areas:
     "r1 r1 r1"
     "r1 r1 r1"
@@ -163,12 +185,38 @@ img {
 }
 
 .reason-1 {
+  display: grid;
+  min-height: 586px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   grid-area: r1;
 }
 
+.reason-1 .features-item-wrapper {
+  grid-column: 1 / 2;
+}
+
+.img-wrapper {
+  width: 800px;
+  height: 256px;
+}
+
+.reason-1 .img-wrapper {
+  grid-column: 2 / 4;
+}
+
 .reason-2 {
+  display: grid;
+  min-height: 256px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-area: r2;
 }
+
+.reason-2 .img-wrapper {
+  order: -1;
+}
+
 
 .reason-3 {
   grid-area: r3;
@@ -211,9 +259,11 @@ img {
 
 .features-item-city {
   display: grid;
+  min-height: 330px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  min-height: 256px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -225,6 +275,7 @@ img {
 
 /* Modal */
 .modal {
+  min-height: 291px;
   font-size: 21px;
   line-height: 1.2;
   color: var(--basic-black);
@@ -258,6 +309,7 @@ img {
   color: var(--basic-white);
   border: none;
 }
+
 .button.button-brown {
   background-color: var(--basic-brown);
 }
@@ -354,11 +406,11 @@ img {
   border-bottom: 1px solid var(--basic-border)
 }
 
-.hotels-item a h3:hover{
+.hotels-item a h3:hover {
   color: var(--basic-blue);
 }
 
-.hotels-item a h3:active{
+.hotels-item a h3:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
