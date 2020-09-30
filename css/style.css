@@ -47,6 +47,10 @@
 
 /* Global */
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -101,8 +105,11 @@ img {
 /* Navigation */
 
 .header {
-  width: 1200px;
   margin: 0 auto;
+}
+
+.container-header {
+  width: 1200px;
   box-shadow: 0 5px 15px var(--basic-shadow);
 }
 
@@ -232,7 +239,6 @@ img {
   order: -1;
 }
 
-
 .reason-3 {
   grid-area: r3;
 }
@@ -357,26 +363,19 @@ img {
   background-color: var(--blue-button-active)
 }
 
-.hotels-info-wrapper .button-blue {
-  width: 110px;
-  height: 27px;
-}
-
-.hotels-info-wrapper .button-brown {
-  width: 142px;
-  height: 27px;
-}
-
 /* Footer */
 
 .page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto 0 auto;
   min-height: 120px;
-  width: 1200px;
   background-color: var(--basic-footer);
   box-shadow: 0 5px 15px var(--basic-shadow);
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1200px;
 }
 
 .footer-contacts {
@@ -411,7 +410,6 @@ img {
 /* Selection Hotels */
 
 .selection-hotels {
-  width: 1200px;
   min-height: 304px;
 }
 
@@ -449,7 +447,7 @@ img {
   align-items: flex-end;
   padding: 24px 73px 30px;
   min-height: 96px;
-  width: 1054px;
+  flex-grow: 1;
   font-size: 14px;
   line-height: 1.5;
   border-top: 1px solid var(--basic-border);
@@ -524,4 +522,40 @@ img {
   background-color: var(--rate-background);
 }
 
+/* Link */
 
+.hotels-info-wrapper .link {
+  height: 27px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.link.link-brown {
+  width: 142px;
+  background-color: var(--basic-brown);
+}
+
+.link.link-blue {
+  width: 110px;
+  background-color: var(--basic-blue);
+}
+
+.link-brown:hover {
+  background-color: var(--brown-button-hover)
+}
+
+.link-brown:active {
+  background-color: var(--brown-button-active)
+}
+
+.link-blue:hover {
+  background-color: var(--blue-button-hover)
+}
+
+.link-blue:active {
+  background-color: var(--blue-button-active)
+}
