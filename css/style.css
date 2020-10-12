@@ -27,7 +27,7 @@
   --basic-black-light: #333333;
   --basic-grey: #eeeeee;
   --basic-white: #ffffff;
-  --basic-white-opacity: rgba(255,255,255,0.3);
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-blue: #81b3d2;
   --basic-brown: #766357;
 
@@ -226,22 +226,20 @@ img {
 }
 
 .short-info::before {
-  content: "";
+  content: '';
   top: -550px;
   left: 0;
   width: 1200px;
   height: 509px;
   position: absolute;
   background-color: var(--basic-blue);
-  background-image:
-    url("../img/svg/welcome.svg"),
-    url("../img/svg/white-mask.svg"),
-    url('../img/index-background.jpg');
+  background-image: url("../img/svg/welcome.svg"),
+  url("../img/svg/white-mask.svg"),
+  url('../img/index-background.jpg');
   background-repeat: no-repeat;
-  background-position:
-    50% 50%,
-    0 100%,
-    0 0;
+  background-position: 50% 50%,
+  0 100%,
+  0 0;
   z-index: 1;
 }
 
@@ -351,7 +349,7 @@ img {
 }
 
 .house-header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -100px;
   left: 107px;
@@ -362,7 +360,7 @@ img {
 }
 
 .food-header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -98px;
   left: 107px;
@@ -373,7 +371,7 @@ img {
 }
 
 .gifts-header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -103px;
   left: 112px;
@@ -398,6 +396,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 .features-item-city li {
   padding: 0 55px;
 }
@@ -408,7 +407,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 71px 0;
+  padding: 0 71px;
   color: var(--basic-black-light);
   background-color: var(--basic-grey);
 }
@@ -451,12 +450,17 @@ img {
   text-align: center;
 }
 
-.map-sedona {
+.map-sedona-img {
+  position: relative;
+  z-index: 0;
+  margin: 0 0 -145px;
+}
+
+.map-sedona-iframe {
   position: relative;
   z-index: 1;
-  margin-bottom: -120px;
   border: 0;
-  background-image: url("../img/map.png");
+  margin: -593px 0 -120px;
 }
 
 /* Modal */
@@ -500,7 +504,7 @@ img {
   background-color: var(--grey-background);
 }
 
-.modal-label{
+.modal-label {
   font-size: 14px;
   line-height: 1.8;
   font-weight: 700;
@@ -590,7 +594,6 @@ img {
 }
 
 
-
 /* Button */
 
 .button {
@@ -663,11 +666,11 @@ img {
 }
 
 .footer-contacts p:first-of-type {
-  margin-top: 23px;
+  margin-top: 19px;
 }
 
 .footer-contacts p:last-of-type {
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .footer-socials {
@@ -704,15 +707,24 @@ img {
   display: inline-block;
   width: 46px;
   height: 48px;
+}
+
+.social-item {
+  width: 46px;
+  height: 48px;
   background-color: var(--basic-blue);
 }
 
-.social-link:hover {
+.social-item:hover {
   background-color: var(--blue-button-hover);
 }
 
-.social-link:active {
+.social-item:active {
   background-color: var(--blue-button-active);
+}
+
+.social-link:active {
+  opacity: 0.3;
 }
 
 .footer-copyright {
