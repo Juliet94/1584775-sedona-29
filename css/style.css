@@ -201,6 +201,10 @@ img {
   color: var(--basic-brown)
 }
 
+.site-nav a {
+  transition: all ease-out 0.3s;
+}
+
 .site-nav a:hover {
   color: var(--basic-blue)
 }
@@ -505,6 +509,9 @@ img {
   width: 346px;
   height: 38px;
   background-color: var(--grey-background);
+  box-sizing: border-box;
+  border: 2px solid var(--grey-background);
+  transition: all ease-out 0.3s;
 }
 
 .modal-label {
@@ -541,6 +548,7 @@ img {
   width: 87px;
   height: 26px;
   background-color: var(--grey-background);
+  transition: all ease-out 0.3s;
 }
 
 .number-input-wrapper input {
@@ -569,6 +577,12 @@ img {
   margin-right: 9px;
 }
 
+.calendar-svg path,
+.minus-svg path,
+.plus-svg path {
+  transition: all ease-out 0.3s;
+}
+
 .calendar-svg:hover path,
 .minus-svg:hover path,
 .plus-svg:hover path {
@@ -591,9 +605,8 @@ img {
 }
 
 .date-input-wrapper:focus-within {
-  box-sizing: border-box;
   background-color: var(--basic-white);
-  border: 2px solid var(--basic-border);
+  border-color: var(--basic-border);
 }
 
 
@@ -610,6 +623,7 @@ img {
   color: var(--basic-white);
   border: none;
   cursor: pointer;
+  transition: all ease-out 0.3s;
 }
 
 .button.button-brown {
@@ -733,6 +747,7 @@ img {
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
+  transition: all ease-out 0.3s;
 }
 
 .social-item:hover {
@@ -759,6 +774,10 @@ img {
 
 .footer-copyright a {
   margin-left: 8px;
+}
+
+.footer-logo path{
+  transition: all ease-out 0.3s;
 }
 
 .footer-logo:hover path {
@@ -900,6 +919,7 @@ img {
   height: 23px;
   background-repeat: no-repeat;
   background-position: 0 0;
+  transition: all ease-out 0.2s;
 }
 .filter-input-checkbox + label::before {
   background-image: url("../img/svg/checkbox-off.svg");
@@ -960,6 +980,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--toggle-shadow);
   cursor: pointer;
+  transition: all ease-out 0.3s;
 }
 
 .toggle:hover {
@@ -1012,6 +1033,11 @@ img {
 }
 
 /* Radio Button */
+
+.radio-label,
+.svg-radio path {
+  transition: all ease-out 0.3s;
+}
 
 .radio-input:checked ~ .radio-label {
   opacity: 1;
@@ -1069,7 +1095,8 @@ img {
 .hotels-title {
   font-size: 21px;
   line-height: 1.2;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  transition: all ease-out 0.3s;
 }
 
 .hotels-item {
@@ -1167,7 +1194,6 @@ img {
   height: 17px;
   width: 90px;
   background-repeat: no-repeat;
-
 }
 
 .hotels-item:first-child .catalog-hotels-rate::before {
@@ -1211,6 +1237,7 @@ img {
   color: var(--basic-white);
   min-height: 27px;
   box-sizing: border-box;
+  transition: all ease-out 0.3s;
 }
 
 .link.link-brown {
