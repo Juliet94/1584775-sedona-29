@@ -42,7 +42,7 @@
 
   --brown-button-hover: #604e43;
   --brown-button-active: #503e33;
-  --blue-button-hover: #669eC0;
+  --blue-button-hover: #669ec0;
   --blue-button-active: #5496bd;
 
   --shadow-page: rgba(0, 1, 1, 0.2);
@@ -50,6 +50,8 @@
 
   --toggle-shadow: #cfcfcf;
   --toggle-background: #ababab;
+
+  --transition-duration: 0.25s;
 }
 
 /* Global */
@@ -202,7 +204,8 @@ img {
 }
 
 .site-nav a {
-  transition: all ease-out 0.3s;
+  transition: color var(--transition-duration) ease-out ,
+              opacity var(--transition-duration) ease-out;
 }
 
 .site-nav a:hover {
@@ -211,7 +214,6 @@ img {
 
 .site-nav a:active {
   color: var(--basic-black);
-  mix-blend-mode: normal;
   opacity: 0.3;
 }
 
@@ -511,7 +513,8 @@ img {
   background-color: var(--grey-background);
   box-sizing: border-box;
   border: 2px solid var(--grey-background);
-  transition: all ease-out 0.3s;
+  transition: background-color var(--transition-duration) ease-out,
+              border-color var(--transition-duration) ease-out;
 }
 
 .modal-label {
@@ -548,7 +551,8 @@ img {
   width: 87px;
   height: 26px;
   background-color: var(--grey-background);
-  transition: all ease-out 0.3s;
+  transition: background-color var(--transition-duration) ease-out,
+              border-color var(--transition-duration) ease-out;
 }
 
 .number-input-wrapper input {
@@ -580,7 +584,7 @@ img {
 .calendar-svg path,
 .minus-svg path,
 .plus-svg path {
-  transition: all ease-out 0.3s;
+  transition: fill var(--transition-duration) ease-out;
 }
 
 .calendar-svg:hover path,
@@ -623,7 +627,8 @@ img {
   color: var(--basic-white);
   border: none;
   cursor: pointer;
-  transition: all ease-out 0.3s;
+  transition: color var(--transition-duration) ease-out,
+              background-color var(--transition-duration) cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .button.button-brown {
@@ -741,13 +746,14 @@ img {
   display: inline-block;
   width: 46px;
   height: 48px;
+  transition: opacity var(--transition-duration) ease-out;
 }
 
 .social-item {
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
-  transition: all ease-out 0.3s;
+  transition: background-color var(--transition-duration) ease-out;
 }
 
 .social-item:hover {
@@ -777,7 +783,7 @@ img {
 }
 
 .footer-logo path{
-  transition: all ease-out 0.3s;
+  transition: fill var(--transition-duration) ease-out;
 }
 
 .footer-logo:hover path {
@@ -919,8 +925,9 @@ img {
   height: 23px;
   background-repeat: no-repeat;
   background-position: 0 0;
-  transition: all ease-out 0.2s;
+  transition: background-image var(--transition-duration) ease-out;
 }
+
 .filter-input-checkbox + label::before {
   background-image: url("../img/svg/checkbox-off.svg");
 }
@@ -980,7 +987,7 @@ img {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--toggle-shadow);
   cursor: pointer;
-  transition: all ease-out 0.3s;
+  transition: transform var(--transition-duration) ease-out;
 }
 
 .toggle:hover {
@@ -1036,7 +1043,10 @@ img {
 
 .radio-label,
 .svg-radio path {
-  transition: all ease-out 0.3s;
+  transition: opacity var(--transition-duration) ease-out,
+              border var(--transition-duration) ease-out,
+              color var(--transition-duration) ease-out,
+              fill var(--transition-duration) ease-out;
 }
 
 .radio-input:checked ~ .radio-label {
@@ -1096,7 +1106,8 @@ img {
   font-size: 21px;
   line-height: 1.2;
   color: var(--basic-black);
-  transition: all ease-out 0.3s;
+  transition: color var(--transition-duration) ease-out,
+              opacity var(--transition-duration) ease-out;
 }
 
 .hotels-item {
@@ -1147,18 +1158,17 @@ img {
   border-bottom: 1px solid var(--basic-border)
 }
 
-.link-hotels h3 {
+.hotels-title {
   margin: 0;
   white-space: nowrap;
 }
 
-.link-hotels h3:hover {
+.hotels-title:hover {
   color: var(--basic-blue);
 }
 
-.link-hotels h3:active {
+.hotels-title:active {
   color: var(--basic-black);
-  mix-blend-mode: normal;
   opacity: 0.3;
 }
 
@@ -1237,7 +1247,7 @@ img {
   color: var(--basic-white);
   min-height: 27px;
   box-sizing: border-box;
-  transition: all ease-out 0.3s;
+  transition: background-color var(--transition-duration) ease-out;
 }
 
 .link.link-brown {
