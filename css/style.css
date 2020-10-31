@@ -896,7 +896,7 @@ img {
   display: contents;
 }
 
-.radio-label {
+.link-sort {
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-blue);
 }
@@ -1039,32 +1039,35 @@ img {
   background-color: var(--basic-white);
 }
 
-/* Radio Button */
+/* Link Sort */
 
-.radio-label,
+.link-sort,
 .svg-radio path {
+  cursor: pointer;
   transition: opacity var(--transition-duration) ease-out,
               border var(--transition-duration) ease-out,
               color var(--transition-duration) ease-out,
               fill var(--transition-duration) ease-out;
 }
 
-.radio-input:checked ~ .radio-label {
+.link-sort-current {
   opacity: 1;
   border: none;
   color: var(--basic-blue);
 }
 
-.radio-input:active ~ .radio-label {
+.link-sort:active {
   opacity: 1;
   border: none;
   color: var(--basic-black);
 }
 
-.radio-label:hover {
+.link-sort:hover {
   opacity: 1;
   color: var(--basic-blue);
 }
+
+/* Radio Button */
 
 .radio-input-triangle:checked ~ .svg-radio path,
 .radio-input-triangle:active ~ .svg-radio path {
@@ -1278,3 +1281,10 @@ img {
 .link-blue:active {
   background-color: var(--blue-button-active)
 }
+
+/* Script */
+
+.modal-close {
+  display: none;
+}
+
