@@ -230,10 +230,6 @@ img {
   background-color: var(--basic-white);
 }
 
-.short-info p {
-
-}
-
 .short-info::before {
   content: '';
   top: -550px;
@@ -242,8 +238,8 @@ img {
   height: 509px;
   position: absolute;
   background-color: var(--basic-blue);
-  background-image: url("../img/svg/welcome.svg"),
-  url("../img/svg/white-mask.svg"),
+  background-image: url('../img/svg/welcome.svg'),
+  url('../img/svg/white-mask.svg'),
   url('../img/index-background.jpg');
   background-repeat: no-repeat;
   background-position: 50% 48%,
@@ -259,10 +255,10 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content min-content min-content min-content;
   grid-template-areas:
-    "r1 r1 r1"
-    "r1 r1 r1"
-    "r2 r2 r2"
-    "r3 r4 r5";
+    'r1 r1 r1'
+    'r1 r1 r1'
+    'r2 r2 r2'
+    'r3 r4 r5';
 }
 
 .reason-1 {
@@ -373,7 +369,7 @@ img {
   left: 107px;
   width: 75px;
   height: 72px;
-  background-image: url("../img/svg/icon-house.svg");
+  background-image: url('../img/svg/icon-house.svg');
   background-repeat: no-repeat;
 }
 
@@ -384,7 +380,7 @@ img {
   left: 107px;
   width: 75px;
   height: 70px;
-  background-image: url("../img/svg/icon-food.svg");
+  background-image: url('../img/svg/icon-food.svg');
   background-repeat: no-repeat;
 }
 
@@ -395,7 +391,7 @@ img {
   left: 112px;
   width: 64px;
   height: 77px;
-  background-image: url("../img/svg/icon-gifts.svg");
+  background-image: url('../img/svg/icon-gifts.svg');
   background-repeat: no-repeat;
 }
 
@@ -546,6 +542,7 @@ img {
   text-transform: uppercase;
   border: none;
   background-color: inherit;
+  width: 300px;
 }
 
 .number-wrapper {
@@ -557,14 +554,15 @@ img {
 }
 
 .number-input-wrapper {
-  padding: 6px 13px 6px 14px;
+  padding: 5px 12px 5px 13px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 87px;
-  height: 26px;
+  width: 85px;
+  height: 24px;
   background-color: var(--grey-background);
+  border: 2px solid var(--grey-background);
   transition: background-color var(--transition-duration) ease-out,
               border-color var(--transition-duration) ease-out;
 }
@@ -622,7 +620,8 @@ img {
   outline: none;
 }
 
-.date-input-wrapper:focus-within {
+.date-input-wrapper:focus-within,
+.number-input-wrapper:focus-within {
   background-color: var(--basic-white);
   border-color: var(--basic-border);
 }
@@ -741,19 +740,19 @@ img {
 }
 
 .social-twitter {
-  background-image: url("../img/svg/twitter.svg");
+  background-image: url('../img/svg/twitter.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-facebook {
-  background-image: url("../img/svg/facebook.svg");
+  background-image: url('../img/svg/facebook.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-youtube {
-  background-image: url("../img/svg/youtube.svg");
+  background-image: url('../img/svg/youtube.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -881,7 +880,7 @@ img {
   top: -14px;
   width: 1200px;
   height: 217px;
-  background-image: url("../img/hotels-background.jpg");
+  background-image: url('../img/hotels-background.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -961,19 +960,19 @@ img {
 }
 
 .filter-input-checkbox + label::before {
-  background-image: url("../img/svg/checkbox-off.svg");
+  background-image: url('../img/svg/checkbox-off.svg');
 }
 
 .filter-input-checkbox:checked + label::before {
-  background-image: url("../img/svg/checkbox-on.svg");
+  background-image: url('../img/svg/checkbox-on.svg');
 }
 
 .filter-input-checkbox:disabled + label::before {
-  background-image: url("../img/svg/checkbox-off-active.svg");
+  background-image: url('../img/svg/checkbox-off-active.svg');
 }
 
 .filter-input-checkbox:disabled:checked + label::before {
-  background-image: url("../img/svg/checkbox-on-active.svg");
+  background-image: url('../img/svg/checkbox-on-active.svg');
 }
 
 .filter-input-checkbox + label:hover {
@@ -1257,10 +1256,10 @@ img {
 }
 
 .hotels-item:first-child .catalog-hotels-rate::before {
-  background-image: url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg");
+  background-image: url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg');
   background-position: 72px 0,
                        49px 0,
                        24px 0,
@@ -1269,9 +1268,9 @@ img {
 }
 
 .hotels-item:nth-child(2) .catalog-hotels-rate::before {
-  background-image: url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg");
+  background-image: url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg');
   background-position: 72px 0,
                        49px 0,
                        25px 0;
@@ -1279,8 +1278,8 @@ img {
 }
 
 .hotels-item:last-child .catalog-hotels-rate::before {
-  background-image: url("../img/svg/rate-star.svg"),
-                    url("../img/svg/rate-star.svg");
+  background-image: url('../img/svg/rate-star.svg'),
+                    url('../img/svg/rate-star.svg');
   background-position: 72px 0,
                        49px 0;
   background-repeat: no-repeat;

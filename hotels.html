@@ -19,7 +19,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a class="site-nav-current" href="hotels.html">Гостиницы</a></li>
+          <li><a class="site-nav-current" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
@@ -80,10 +80,10 @@
               <div class="range-filter">
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                    от <input type="number" min="0" name="min-price" value="0" autocomplete="off">
                   </label>
                   <label class="max-price">
-                    до <input type="number" name="max-price" value="3000">
+                    до <input type="number" min="0" name="max-price" value="3000" autocomplete="off">
                   </label>
                 </div>
                 <div class="range-controls">
@@ -116,11 +116,11 @@
             </ul>
           </div>
           <div class="sort-maxmin-wrapper">
-              <a class="link-maxmin" href="#">
-                <svg class="svg-maxmin" width="11" height="10" aria-label="Сортировать по возрастанию"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+              <a class="link-maxmin" href="#" aria-label="Сортировать по возрастанию">
+                <svg class="svg-maxmin" width="11" height="10"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
               </a>
-              <a class="link-maxmin link-maxmin-current" href="#">
-                <svg class="svg-maxmin" width="11" height="10" aria-label="Сортировать по убыванию"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
+              <a class="link-maxmin link-maxmin-current" href="#" aria-label="Сортировать по убыванию">
+                <svg class="svg-maxmin" width="11" height="10"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
               </a>
           </div>
         </div>
