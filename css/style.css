@@ -759,6 +759,7 @@ img {
 
 .social-link {
   display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 48px;
   transition: opacity var(--transition-duration) ease-out;
@@ -827,8 +828,8 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1056px;
-  padding: 12px 72px 32px;
-
+  padding: 12px 72px 29px;
+  background-color: var(--basic-blue);
 }
 
 .filter-type-wrapper {
@@ -836,7 +837,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 390px;
-  background-color: var(--basic-blue);
 }
 
 .filter-type-wrapper ul {
@@ -889,7 +889,7 @@ img {
 
 .sort-wrapper {
   min-width: 1054px;
-  padding: 25px 73px 20px;
+  padding: 29px 73px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -915,6 +915,7 @@ img {
 .sort-type-wrapper strong,
 .sort-type-wrapper span {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .sort-type-wrapper span {
@@ -941,7 +942,7 @@ img {
 
 .link-sort {
   opacity: 0.3;
-  border-bottom: 1px dashed var(--basic-blue);
+  border-bottom: 1px dotted var(--basic-blue);
 }
 
 /* Checkbox */
@@ -1238,8 +1239,9 @@ img {
 .catalog-hotels-rate {
   position: relative;
   text-align: center;
+  padding: 2px 0;
   width: 110px;
-  height: 27px;
+  height: 23px;
   margin: 0;
   color: var(--rate);
   background-color: var(--grey-background);
