@@ -485,6 +485,7 @@ img {
 /* Modal */
 
 .modal-wrapper {
+  overflow: hidden;
   right: 316px;
   position: absolute;
   display: flex;
@@ -492,14 +493,21 @@ img {
   justify-content: space-between;
   min-width: 458px;
   z-index: 2;
+  max-height: 395px;
   width: 458px;
-  padding: 55px;
+  padding: 0 55px;
   box-shadow: 0 7px 15px var(--shadow-modal);
   background-color: var(--basic-white);
+  transition: max-height 0.15s ease,
+              padding 0s ease 0.1s;
 }
 
 .modal {
   display: contents;
+}
+
+.date-wrapper:first-of-type {
+  margin-top: 55px;
 }
 
 .date-wrapper {
@@ -654,6 +662,7 @@ img {
   min-height: 58px;
   min-width: 458px;
   margin-top: 54px;
+  margin-bottom: 55px;
   background-color: var(--basic-blue);
 }
 
@@ -1333,6 +1342,7 @@ img {
 /* Script */
 
 .modal-close {
-  display: none;
+  max-height: 0;
+
 }
 
